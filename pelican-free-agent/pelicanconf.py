@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Comozilla Lab'
-SITENAME = 'Comozilla Lab'
-SITETITLE = 'コモジラ研究所'
-SITESUBTITLE = ""
+AUTHOR = 'Free Agent'
+SITENAME = 'Free Agent'
+SITETITLE = 'Free Agent'
+SITESUBTITLE = "A bootstrap one page theme for Pelican"
 SITEURL = 'http://localhost:8000'
 
 
-THEME = './pelican-free-agent'
+THEME = 'pelican-free-agent'
 THEME_STATIC_DIR = 'theme'
 PATH = 'content'
 #STATIC_PATHS = [ 'mail','js', 'css', 'fonts']
@@ -19,7 +19,7 @@ PATH = 'content'
 #     }
 TIMEZONE = 'America/Phoenix'
 
-DEFAULT_LANG = 'ja'
+DEFAULT_LANG = 'en'
 BOOTSTRAP_FILE = 'bootstrap.min.css'
 CSS_FILE = 'freeagent.css'
 FONTS = 'fonts'
@@ -53,6 +53,8 @@ NAVLINKS = (
 
 # Portfolio Name
 PORTFOLIO = 'Portfolio'
+
+
 
 #Contact form fields sorted by: label, input_type, id, required_validation_,msg
 CONTACT_FIELDS = (
