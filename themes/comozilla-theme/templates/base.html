@@ -15,8 +15,6 @@
     <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ BOOTSTRAP_FILE }}" rel="stylesheet">
 <!-- {{ SITEURL }}/{{ THEME_STATIC_DIR }} -->
     <!-- Custom CSS -->
-    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{CSS_FILE}}" rel="stylesheet">
-    
     {% assets filters="less", output="css/freeagent.css", "less/freeagent.less" %}
     <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
     {% endassets %}

@@ -42,12 +42,12 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 DIRECT_TEMPLATES = ['index']
-DELETE_OUTPUT_DIRECTORY = True
+DELETE_OUTPUT_DIRECTORY = False
 # Top Menu Links
 NAVLINKS = (
 	('#about', 'About'),
-	('#services','Services'),
-	('#portfolio', 'Portfolio'),
+	('#workshops','Workshops'),
+	#('#portfolio', 'Portfolio'),
 	('#contact', 'Contact')
 )
 
