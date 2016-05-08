@@ -12,11 +12,10 @@ SITEURL = 'http://localhost:8000'
 THEME = './pelican-free-agent'
 THEME_STATIC_DIR = 'theme'
 PATH = 'content'
-#STATIC_PATHS = [ 'mail','js', 'css', 'fonts']
-#add images back in above
-# EXTRA_PATH_METADATA = {
-#     'static/images/portfolio': {'path': 'images/portfolio'},
-#     }
+STATIC_PATHS = ['extra/CNAME']
+EXTRA_PATH_METADATA = {
+    'extra/CNAME': {'path': 'CNAME'},
+}
 TIMEZONE = 'America/Phoenix'
 
 DEFAULT_LANG = 'ja'
