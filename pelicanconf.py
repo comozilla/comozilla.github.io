@@ -7,17 +7,20 @@ SITENAME = 'Comozilla Lab'
 SITETITLE = 'コモジラ研究所'
 SITESUBTITLE = ""
 SITEURL = 'http://localhost:8000'
+RELATIVE_URLS = True
 
-
-THEME = './pelican-free-agent'
+THEME = './themes/comozilla-theme'
 THEME_STATIC_DIR = 'theme'
 PATH = 'content'
 STATIC_PATHS = ['extra/CNAME']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
 }
-TIMEZONE = 'America/Phoenix'
 
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['assets']
+
+TIMEZONE = 'Asia/Tokyo'
 DEFAULT_LANG = 'ja'
 BOOTSTRAP_FILE = 'bootstrap.min.css'
 CSS_FILE = 'freeagent.css'
@@ -30,7 +33,6 @@ SCRIPTS = [
 	'classie.js',
 	'cbpAnimatedHeader.js',
 	'jqBootstrapValidation.js',
-	'contact_me.js',
 	'freeagent.js'
 ]
 
@@ -43,10 +45,9 @@ DIRECT_TEMPLATES = ['index']
 DELETE_OUTPUT_DIRECTORY = True
 # Top Menu Links
 NAVLINKS = (
-	#('#page-top', 'Home'),
+	('#about', 'About'),
 	('#services','Services'),
 	('#portfolio', 'Portfolio'),
-	('#about', 'About'),
 	('#contact', 'Contact')
 )
 
