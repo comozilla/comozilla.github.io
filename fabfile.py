@@ -3,7 +3,10 @@ import fabric.contrib.project as project
 import os
 import shutil
 import sys
-import SocketServer
+try:
+    import SocketServer
+except ImportError:
+    import socketserver as SocketServer
 
 from pelican.server import ComplexHTTPRequestHandler
 
@@ -21,7 +24,7 @@ env.cloudfiles_api_key = 'my_rackspace_api_key'
 env.cloudfiles_container = 'my_cloudfiles_container'
 
 # Github Pages configuration
-env.github_pages_branch = "gh-pages"
+env.github_pages_branch = "master"
 
 # Port for `serve`
 PORT = 8000

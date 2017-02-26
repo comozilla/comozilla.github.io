@@ -14,7 +14,7 @@ THEME_STATIC_DIR = 'theme'
 PATH = 'content'
 STATIC_PATHS = ['extra/CNAME']
 EXTRA_PATH_METADATA = {
-    'extra/CNAME': {'path': 'CNAME'},
+	'extra/CNAME': {'path': 'CNAME'},
 }
 
 PLUGIN_PATHS = ['plugins']
