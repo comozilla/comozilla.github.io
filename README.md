@@ -12,6 +12,17 @@ comozilla Webサイトのソースコード。
 pip install pelican markdown ghp-import webassets
 ```
 
+デプロイに[Fabric](http://www.fabfile.org/)を使う場合
+
+Python 2.7
+```
+pip install Fabric
+```
+Python >= 3
+```
+pip install Fabric3
+```
+
 
 ## コンテンツを書く
 基本的には`content`ディレクトリ以下にファイルを置きます。  
@@ -36,15 +47,31 @@ Hogehoge Workshop
 make html
 ```
 
-変更を検知して自動生成したいなら
+(Fabric)
 ```
-pelican -r
+fab build
+```
+
+### 変更を検知して自動生成
+```
+make regenerate
+```
+
+(Fabric)
+```
+fab regenerate
 ```
 
 ### ローカルでサーバを起動
 ```
 make serve
 ```
+
+(Fabric)
+```
+fab serve
+```
+
 ブラウザで`http://localhost:8000/`にアクセスして表示を確認
 
 
@@ -56,4 +83,9 @@ make publish
 以下のコマンドで、`output`ディレクトリ以下をmasterブランチにcommitしてpushまで行われます。
 ```
 make github
+```
+
+(Fabric)
+```
+fab gh_pages
 ```
